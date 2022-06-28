@@ -137,7 +137,7 @@ def register_business():
         db.session.add(new_dienstleister_profil)
         db.session.commit()
 
-        login_user(new_user)
+        #login_user(new_user)
         return redirect(url_for('views.home'))
 
     return render_template("register.html", form=register_business_form)
