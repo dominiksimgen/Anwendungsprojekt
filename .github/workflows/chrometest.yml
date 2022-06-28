@@ -8,7 +8,7 @@ on:
 jobs:
   selenium_test_ubuntu:
     strategy:
-      fail-fast: false
+      fail-fast: true
       matrix:
         os: [ubuntu-latest]
         python-version: ["3.9"]
@@ -67,7 +67,6 @@ jobs:
 
   selenium_test_windows:
     strategy:
-      fail-fast: false
       matrix:
         os: [windows-latest]
         python-version: ["3.9"]
