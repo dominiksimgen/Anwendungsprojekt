@@ -21,7 +21,7 @@ class Kunde(db.Model):
     __tablename__ = "Kunde"
     kunden_id = db.Column(db.Integer, db.ForeignKey("User.id"), primary_key=True)
     user_rel = relationship("User", back_populates="kunde_rel")
-    k_vorname = db.Column(db.String(100))
+    k_vornameM = db.Column(db.String(100))
     k_nachname = db.Column(db.String(100))
     k_geburtsdatum = db.Column(db.Date)
     k_straße = db.Column(db.String(100))

@@ -24,7 +24,7 @@ class RegisterForm(FlaskForm):
     submit = SubmitField("Registrierung fortsetzen")
 
 class RegisterCustomerForm(FlaskForm):
-    k_vorname = StringField(label="Vornamem", validators=[DataRequired()])
+    k_vorname = StringField(label="Vorname", validators=[DataRequired()])
     k_nachname = StringField(label="Nachname", validators=[DataRequired()])
     #k_geburtstatum = DateField(label="Geburtsdatum (TT.MM.YYYY)", validators=[DataRequired()], format='%d.%m.%Y')
     k_straße = StringField(label="Straße und Hausnummer", validators=[DataRequired()])
